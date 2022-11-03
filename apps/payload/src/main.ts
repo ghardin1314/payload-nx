@@ -1,7 +1,12 @@
 import express from 'express';
 import payload from 'payload';
 
+import { Alerts } from '@cms/collections';
+
 const app = express();
+
+// Proof app itself can resolve local library
+console.log({ Alerts });
 
 payload.init({
   secret: 'super-secret',
