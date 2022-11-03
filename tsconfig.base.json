@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cms/collections": ["libs/collections/src/index.ts"]
+    },
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "tmp"]
 }
